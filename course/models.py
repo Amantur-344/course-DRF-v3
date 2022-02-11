@@ -39,7 +39,7 @@ class Contact(models.Model):
     link = models.CharField(max_length=255)
 
     def __str__(self):
-        return self.name
+        return self.type
 
 
 class Course(models.Model):

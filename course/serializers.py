@@ -12,15 +12,15 @@ class ContactSerializer(serializers.ModelSerializer):
 
 class BranchSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Contact
+        model = Branch
         fields = ('latitude',
                   'longitude',
                   'address')
 
 
 class CourseSerializer(serializers.ModelSerializer):
-    contacts = ContactSerializer(many=True, read_only=True)
-    branches = BranchSerializer(many=True, read_only=True)
+    contacts = ContactSerializer(many=True)
+    branches = BranchSerializer(many=True)
 
     class Meta:
         model = Course
@@ -32,17 +32,20 @@ class CourseSerializer(serializers.ModelSerializer):
                   'branches')
 
         # depth = 2
-    
+
     def create(self, validated_data):
         contacts_list = []
-        contacts = validated_data.get('contacts')
+        contacts = validated_data.pop('contacts')
         for i in contacts:
             contacts_list.append(Contact.objects.create(type=i['type'], link=i['link']))
 
         branches_list = []
-        branches = validated_data.get('branches')
+        branches = validated_data.pop('branches')
         for i in branches:
-            branches_list.append(Branch.objectc.create(latitude=i['latitude'],
+            branches_list.append(Branch.objects.create(latitude=i['latitude'],
                                                        longitude=i['longitude'], address=i['address']))
 
-        return Course.objects.create(contacts=contacts_list, branches=branches_list, **validated_data)
+        course = Course.objects.create(**validated_data)
+        course.contacts.set(contacts_list)
+        course.branches.set(branches_list)
+        return course
