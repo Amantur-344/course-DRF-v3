@@ -45,11 +45,11 @@ python3 manage.py runserver
 - [Django REST framework](https://www.django-rest-framework.org/) - The apiframework used
 
 # Authors
-____
+
 - Neobis - _Task_ - [Neobis](https://neobis.com/)
 #### and build this task
 - Amantur - _Course Api_ - [Amantur-344](https://github.com/Amantur-344)
 
 # Acknowledgments
-____
+
 - Mintimir for help 
