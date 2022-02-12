@@ -1,54 +1,54 @@
 # course-DRF
 ____
-###Api for creating courses and for finding courses
-#Getting Started
+### Api for creating courses and for finding courses
+# Getting Started
 ____
-##Prerequisites
-###You need to create and activate env 
-###Create env file:
+## Prerequisites
+### You need to create and activate env 
+### Create env file:
 ```python
 python3 -m venv env
 ```
-###And activate it in linux/os
+### And activate it in linux/os
 ```python 
 source env/bin/activate
 ```
-###Activate it in windows 
+### Activate it in windows 
 ```python
 env\Scripts\activate
 ```
 
-##Installing
-###Install all package
+## Installing
+### Install all package
 ```python
 pip install -r requirements.txt
 ```
 
-#Running the tests
+# Running the tests
 ____
-##Running
-###Run this command for create database
+## Running
+### Run this command for create database
 ```python
 python3 manage.py migrate
 ```
-###and repeat
+### and repeat
 ```python
 python3 manage.py runserver
 ```
-##Break down into end to end tests
-###test not yet available
+## Break down into end to end tests
+### test not yet available
 
-#Built With
+# Built With
 ___
 -[Django](https://www.djangoproject.com/) - The web framework used
 -[Django REST framework](https://www.django-rest-framework.org/) - The apiframework used
 
-#Authors
+# Authors
 ____
 -Neobis - _Task_ - [Neobis](https://neobis.com/)
-###and build this task
+### and build this task
 -Amantur - _Course Api_ - [Amantur-344](https://github.com/Amantur-344)
 
-#Acknowledgments
+# Acknowledgments
 ____
 -Mintimir for help 
