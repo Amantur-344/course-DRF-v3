@@ -1,6 +1,6 @@
 # course-DRF
 
-### Api for creating courses and for finding courses
+#### Api for creating courses and for finding courses
 # Getting Started
 
 ## Prerequisites
@@ -27,7 +27,7 @@ pip install -r requirements.txt
 # Running the tests
 
 ## Running
-### Run this command for create database
+#### Run this command for create database
 ```python
 python3 manage.py migrate
 ```
