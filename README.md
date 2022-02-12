@@ -4,7 +4,7 @@ ____
 # Getting Started
 ____
 ## Prerequisites
-### You need to create and activate env 
+#### You need to create and activate env 
 ### Create env file:
 ```python
 python3 -m venv env
@@ -36,18 +36,18 @@ python3 manage.py migrate
 python3 manage.py runserver
 ```
 ## Break down into end to end tests
-### test not yet available
+#### test not yet available
 
 # Built With
 ___
--[Django](https://www.djangoproject.com/) - The web framework used
--[Django REST framework](https://www.django-rest-framework.org/) - The apiframework used
+- [Django](https://www.djangoproject.com/) - The web framework used
+- [Django REST framework](https://www.django-rest-framework.org/) - The apiframework used
 
 # Authors
 ____
--Neobis - _Task_ - [Neobis](https://neobis.com/)
-### and build this task
--Amantur - _Course Api_ - [Amantur-344](https://github.com/Amantur-344)
+- Neobis - _Task_ - [Neobis](https://neobis.com/)
+#### and build this task
+- Amantur - _Course Api_ - [Amantur-344](https://github.com/Amantur-344)
 
 # Acknowledgments
 ____
