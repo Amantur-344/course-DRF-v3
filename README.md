@@ -1,8 +1,8 @@
 # course-DRF
-____
+
 ### Api for creating courses and for finding courses
 # Getting Started
-____
+
 ## Prerequisites
 #### You need to create and activate env 
 ### Create env file:
@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ```
 
 # Running the tests
-____
+
 ## Running
 ### Run this command for create database
 ```python
@@ -39,7 +39,7 @@ python3 manage.py runserver
 #### test not yet available
 
 # Built With
-___
+
 - [Django](https://www.djangoproject.com/) - The web framework used
 - [Django REST framework](https://www.django-rest-framework.org/) - The apiframework used
 
