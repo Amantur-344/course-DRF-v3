@@ -52,4 +52,4 @@ ____
 
 # Acknowledgments
 ____
--Mintimir for help 
+- Mintimir for help 
