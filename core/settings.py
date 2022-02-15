@@ -24,6 +24,7 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'decouple',
+    'drf_yasg',
 
     'course',
 ]
@@ -65,7 +66,7 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'mydatabase',
+        'NAME': 'db.sqlite3',
     }
 }
 
