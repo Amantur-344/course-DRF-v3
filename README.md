@@ -36,7 +36,7 @@ python3 manage.py migrate
 python3 manage.py runserver
 ```
 ## Break down into end to end tests
-- [Api Documentation](http://127.0.0.1:8000/swagger/?format=openapi)
+- [Api Documentation](https://coursedrf.docs.apiary.io/)
 #### test not yet available
 
 # Built With
