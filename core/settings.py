@@ -24,6 +24,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'decouple',
     'drf_yasg',
+    'whitenoise.runserver_nostatic',
 
     'course',
 ]
