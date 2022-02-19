@@ -7,9 +7,8 @@ import dj_database_url
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-SECRET_KEY = 'django-insecure--#*(lof*-jj-w-_69!msj$&s^50y$4fu_e^b9@ycq3=-#q9s(g'
-
-DEBUG = True
+SECRET_KEY = config('SECRET_KEY')
+DEBUG = config('DEBUG', cast=bool)
 
 ALLOWED_HOSTS = ["0.0.0.0", "127.0.0.1", "courseapp-drf.herokuapp.com"]
 
